@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 day=`date`
-echo $day
 git add --all
-git commit -m "commit"
+git commit -m "commit$day"
 git push -u origin master
