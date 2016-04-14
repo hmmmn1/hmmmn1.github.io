@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-day=date
+day=`date`
 echo $day
 git add --all
 git commit -m "commit"
