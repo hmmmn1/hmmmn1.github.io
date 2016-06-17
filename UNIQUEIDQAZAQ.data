@@ -63,7 +63,7 @@ void main()
 //	UV = vertexUV;
 
 	Position_worldspace = (M * vec4(vPosition_m,1)).xyz;
-	Normal_cameraspace = ( V * M * vec4(vNormal_m,0)).xyz; // Only correct if ModelMatrix does not scale the model ! Use its inverse transpose if not.
+	Normal_cameraspace = ( V * M * vec4(vNormal_m,0)).xyz; // Only correct if ModelMatrix does not scale the model! Use its inverse transpose if not.
 	EyeDirection_cameraspace = vec3(0,0,0) - ( V * M * vec4(vPosition_m,1)).xyz;
 	vec3 LightPosition_cameraspace = ( V * vec4(LightPosition_worldspace2,1)).xyz;
 	LightDirection_cameraspace = LightPosition_cameraspace + EyeDirection_cameraspace;
